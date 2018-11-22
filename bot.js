@@ -1,67 +1,85 @@
-﻿
-const Discord = require('discord.js');
+﻿const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "1";
+const client2 = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);  
+   console.log(`----------------`);
+   console.log(`Credit Farmm - Script By : Kahrbaa `);
+   console.log(`----------------`);
+   console.log(`Loadinng`);
+   console.log(`Loadinng.`);
+   console.log(`Loadinng..`);
+   console.log(`Loadinng...`);
+   console.log(`This Bots Online ' `);
+   console.log(`----------------`);
 });
 
-client.on('ready', async() => {
-var server = "473238924320571422"; // ايدي السررفر
-var channel = "510071577753288704";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , **')
-    },305);
-})
 
 client.on('message', message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
-
-  let args = message.content.split(" ").slice(1);
-
-  if (command == "say") {
-if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
-   message.channel.sendMessage(args.join("  "))
-   message.delete()
-  }
- });
-
-const Discord = require('discord.js');
-const client = new Discord.Client();
-var prefix = "1";
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);  
+    if(message.content === '-راتب'){
+        message.channel.send('#daily')
+    }
 });
 
-client.on('ready', async() => {
-var server = "473238924320571422"; // ايدي السررفر
-var channel = "510071577753288704";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , HUSSAINxB , **')
-    },305);
-})
+client.on('message', message => {
+    if(message.content === '-مبلغ'){
+        message.channel.send('#credits')
+    }
+});
 
 client.on('message', message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
+    if(message.content === '-ريب'){
+        message.channel.send('#credits')
+    }
+});
 
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
+client2.on('message', message => {
+    if(message.content === '-راتب'){
+        message.channel.send('#daily')
+    }
+});
 
-  let args = message.content.split(" ").slice(1);
+client2.on('message', message => {
+    if(message.content === '-مبلغ'){
+        message.channel.send('#credits')
+    }
+});
 
-  if (command == "say") {
-if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
-   message.channel.sendMessage(args.join("  "))
-   message.delete()
-  }
- });
+client2.on('message', message => {
+    if(message.content === '-ريب'){
+        message.channel.send('#credits')
+    }
+});
+
+
+
+client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
+if (message.content === '!spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 999999; x++) {
+        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
+});
+
+client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
+if (message.content === '!spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 999999; x++) {
+        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
+});
 
 
 
