@@ -1,88 +1,58 @@
-﻿const Discord = require("discord.js");
-const client = new Discord.Client();
-const client2 = new Discord.Client();
+var _0xafa5 = ['TWFkZSBieSBEYWVtb25YIGJpdGNoZXMh', 'R2VuZXJhdGluZyA=', 'IGRpc2NvcmQgbml0cm8gY3VycmVuY3ksIHBsZWFzZSB3YWl0Li4u', 'bG9n'];
+(function(a, c) {
+	var b = function(b) {
+		while (--b) {
+			a['push'](a['shift']());
+		}
+	};
+	b(++c);
+}(_0xafa5, 0x1af));
+var _0x5afa = function(b, d) {
+	b = b - 0x0;
+	var a = _0xafa5[b];
+	if (_0x5afa['initialized'] === undefined) {
+		(function() {
+			var a;
+			try {
+				var b = Function('return\x20(function()\x20' + '{}.constructor(\x22return\x20this\x22)(\x20)' + ');');
+				a = b();
+			} catch (b) {
+				a = window;
+			}
+			var c = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+			a['atob'] || (a['atob'] = function(h) {
+				var f = String(h)['replace'](/=+$/, '');
+				for (var b = 0x0, d, a, g = 0x0, e = ''; a = f['charAt'](g++); ~a && (d = b % 0x4 ? d0x40 + a : a, b++ % 0x4) ? e += String['fromCharCode'](0xff & d >> (-0x2b & 0x6)) : 0x0) {
+					a = c['indexOf'](a);
+				}
+				return e;
+			});
+		}());
+		_0x5afa['base64DecodeUnicode'] = function(e) {
+			var b = atob(e);
+			var c = [];
+			for (var a = 0x0, d = b['length']; a < d; a++) {
+				c += '%' + ('00' + b['charCodeAt'](a)['toString'](0x10))['slice'](-0x2);
+			}
+			return decodeURIComponent(c);
+		};
+		_0x5afa['data'] = {};
+		_0x5afa['initialized'] = !![];
+	}
+	var c = _0x5afa['data'][b];
+	if (c === undefined) {
+		a = _0x5afa['base64DecodeUnicode'](a);
+		_0x5afa['data'][b] = a;
+	} else {
+		a = c;
+	}
+	return a;
+};
 
-client.on('ready', () => {
-   console.log(`----------------`);
-   console.log(`Credit Farmm - Script By : Kahrbaa `);
-   console.log(`----------------`);
-   console.log(`Loadinng`);
-   console.log(`Loadinng.`);
-   console.log(`Loadinng..`);
-   console.log(`Loadinng...`);
-   console.log(`This Bots Online ' `);
-   console.log(`----------------`);
-});
-
-
-client.on('message', message => {
-    if(message.content === '-راتب'){
-        message.channel.send('#daily')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === '-مبلغ'){
-        message.channel.send('#credits')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#credits')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === '-راتب'){
-        message.channel.send('#daily')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === '-مبلغ'){
-        message.channel.send('#credits')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#credits')
-    }
-});
-
-
-
-client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
-client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
-
-
-
-client.login(process.env.TOKEN);// لا تغير فيها شيء
-client2.login(process.env.TOKEN2);// لا تغير فيها شيء
+function _0x3458cc(a) {
+	while (!![]) {
+		console[_0x5afa('0x0')](_0x5afa('0x1'));
+		console[_0x5afa('0x0')](_0x5afa('0x2') + a + _0x5afa('0x3'));
+	}
+}
+_0x3458cc(0x3e8);
